@@ -1,0 +1,277 @@
+
+@import './cssUse/variable_.scss';
+@import './cssUse/button_.scss';
+//Video Content
+.video_content{
+    video{
+        width: 100%;
+        height: 625px;
+    }
+    .text_video{
+        .text_up{
+            position: absolute;
+            top: 30%;
+            left: 20%;
+        }
+        .text_down{
+            position: absolute;
+            bottom: 20%;
+            right: 10%;
+        }    
+        p{
+            @include font-Unbounded;
+            font-size: 55px;
+            color: #FFFFFF;
+            font-weight: 500;
+        }   
+    }
+}
+//Title CSS
+.picture_image1{
+    background-image: url('../../image/Home/image\ 17.png');
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+    height: 360px;
+    .text_picture{
+        text-align: center;
+        padding-top: 30px;
+        p{
+            font-size: 36px;
+            font-weight: 500;
+            color: #000000;
+        }
+    }
+    .button_flex{
+        .button_left1{
+            background-color: $color-green;
+            a{
+                color: #FFFFFF;
+                font-weight: 500;
+                font-size: 17px;
+            }
+        }
+        .button_left2{
+            background-color: #FCB7BB;
+            a{
+                color: #000000;
+                font-size: 17px;
+            }
+        }
+    }
+}
+// Holiday Sets are here
+.best_seller1{
+    background-color: #F5E2D6;
+    h3{
+        font-size: 40px;
+        color: #1E1E1E;
+    }
+    img{
+        width: 100%;
+    }
+}
+// Dewy Heaven Starts From
+.contact_explore1{
+    padding: 0px 10px;
+    h3{
+        @include font-Unbounded;
+        font-size: 32px;
+        color: #1E1E1E;
+        padding-top: 43px;
+        padding-bottom: 16px;
+    }
+    p{
+        font-size: 16px;
+        color: #1E1E1E;
+    }
+    .button_flex{
+        padding-top: 70px;
+        button{
+            margin: 0px;
+        }
+        .button_left2{
+            background-color: #FCB7BB;
+            a{
+                color: #000000;
+                font-weight: bold;
+            }
+        }
+    }
+    img{
+        width: 100%;
+        object-fit: cover;
+        background-size: cover;
+        padding-left: 40px;
+    }
+}
+//Our Best Sellers
+.best_seller2{
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .item{
+        border-top: unset;
+        .text_slider{
+            h4{
+                font-size: 18px;
+                color: #000000;
+                font-weight: bold;
+                @include font-Unbounded;
+            }
+            p{
+                color: #000000;
+            }
+        }
+        .text_review{
+            p{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+//Heaven Socials
+.heaven_socials{
+    background-color: #F5E2D6;
+    h2{
+        font-size: 40px;
+        color: #1E1E1E;
+        @include font-Unbounded;
+        padding-top:44px;
+        padding-bottom: 37px;
+    }
+    .item1{
+        padding-bottom: 92px;
+        video{
+            width: 256px;
+            height: 300px;
+            border-radius: 20px;
+            border:1px solid #FF949A ;
+        }
+    }
+}
+//Dewy Heaven Style
+.contact_explore2{
+    img{
+        width: 100%;
+        object-fit: cover;
+        height: 510px;
+    }
+    .text-left{
+        padding: 95px 0px;
+        padding-left: 20px;
+        h3{
+            font-size: 36px;
+            color: #1E1E1E;
+            @include font-Unbounded;
+        }
+        p{
+            font-size: 16px;
+            padding: 20px 0px;
+        }
+    }
+    .button_flex{
+        button{
+            margin: 0;
+            background-color: #FF949A;
+            a{
+                color: #000000;
+                font-size: 24px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+//Video Content 2
+.video_content2{
+    background-color: #76C78D;
+    video{
+        padding: 66px 0px;
+        width: 100%;
+        height: 700px;
+    }
+}
+
+//=============CSS Mobile============//
+.best_seller3{
+    h2{
+        font-size: 24px;
+        @include font-Unbounded;
+        font-weight: bold;
+        padding-top: 119px;
+        padding-bottom: 24px;
+    }
+    h3{
+        font-size: 24px;
+        @include font-Unbounded;
+        padding-bottom: 20px;
+        b{
+            font-size: 24px;
+            @include font-Unbounded;
+            font-weight: bold;
+            margin: 0px 10px;
+        }
+    }
+    .image_left{
+        img{
+            width: 100%;
+            object-fit: contain;
+            padding-bottom: 20px;
+        }
+    }
+    .item{
+        padding: 0px 0px;
+        border-top: unset;
+        img{
+            width: 100%;
+        }
+        h4{
+            font-size: 12px;
+            font-weight: bold !important;
+            @include font-Unbounded;
+        }
+        p{
+            font-size: 12px;
+            color: #000000;
+        }
+        .start{
+            .rate:not(:checked) > label{
+                font-size: 12px;
+            }
+            .text_review{
+                p{
+                    font-size: 10px;
+                    color: #000000;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .button_add{
+        padding-top: 0px;
+        button{
+            padding: 5px 10px;
+        }
+    }
+}
+.ul-left2{
+    display: flex;
+    justify-content: center;
+    background-color: $color-green;
+    ul{
+        li{
+            padding-bottom: 20px;
+            a{
+                color: #FFFFFF !important;
+                
+            }
+        }
+    }
+}
+.list_content1{
+    display: none;
+}
+.active{
+    display: block;
+}
